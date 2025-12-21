@@ -1,0 +1,86 @@
+/* :root {
+  --sage-green: #9CAF88;
+  --mustard-yellow: #E6B450;
+  --burnt-orange: #D97D54;
+  --chocolate-brown: #5C4033;
+  --soft-cream: #F5EBDD;
+  --accent-coral: #F28C8C;
+}
+
+body {
+  background: var(--soft-cream);
+  color: var(--chocolate-brown);
+} */
+
+:root {
+  /* Neutrals */
+  --white: #ffffff;
+  --ivory: #fffff0;
+  --cream: #fffdd0;
+
+  /* Soft backgrounds */
+  --beige: #f5f5dc;
+  --taupe: #d2b48c;
+  --light-grey: #d3d3d3;
+
+  /* Text & accents */
+  --charcoal: #36454f;
+  --navy: #001f3f;
+}
+
+body {
+  background-color: var(--ivory);
+  color: var(--navy);
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Cormorant Garamond, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--charcoal);
+  --bs-btn-border-color: var(--charcoal);
+  --bs-btn-hover-border-color: var(--charcoal);
+  --bs-btn-hover-bg: var(--beige);
+  --bs-btn-hover-color: var(--charcoal);
+}
+
+.btn-light {
+  font-family: Cormorant Garamond, serif;;
+  --bs-btn-bg: var(--ivory);
+  --bs-btn-border-color: var(--charcoal);
+  --bs-btn-hover-border-color: var(--charcoal);
+  --bs-btn-hover-bg: var(--beige);
+  --bs-btn-hover-color: var(--charcoal);
+}
+
+.paris-font {
+  font-family: "Parisienne", cursive;
+}
+
+.fancy-serif-font {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+iframe {
+  min-height: 800px; /* adjust depending on form length */
+}
+
+.brand {
+  font-family: Cormorant Garamond, serif;
+}
+
+.lang-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+
+  &:not(.selected) {
+    opacity: 0.5;
+  }
+}
