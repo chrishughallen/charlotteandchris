@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="styles.css">
   <title>Chris & Charlotte 2026 | Info</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg sticky-top" style="background: #fffff0; border-bottom: 1px solid rgba(0,0,0,0.1)">
+  <nav class="navbar navbar-expand-lg sticky-top" style="background: #fff; border-bottom: 1px solid rgba(0,0,0,0.1)">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <i class="bi bi-house-heart-fill" style="font-size: 1.5rem;"></i>
@@ -41,58 +42,93 @@
       </div>
     </div>
   </nav>
-  <main class="container mt-3">
+  <main class="container my-5">
     <section class="row">
       <div class="col-lg-6 m-auto">
-        <div class="pb-3 border-bottom d-grid">
-          <h1 data-i18n="program_title"></h1>
-          <div class="d-grid">
-            <p class="mb-0"><strong>Mairie de Villeconin, 30 Grande Rue, 91580 Villeconin</strong></p>
-            <p data-i18n="program_mairie"></p>
-          </div>
-          <div class="d-grid">
-            <p class="mb-0"><strong>Chateau de Villeconin, 6 Grand Rue, 91580 Villeconin</strong></p>
-            <p data-i18n="program_ceremony"></p>
-            <p data-i18n="program_cocktail"></p>
-            <p data-i18n="program_dinner"></p>
-            <p data-i18n="program_party"></p>
-          </div>
-        </div>
 
-      <div class="py-3 border-bottom">
-        <h2 data-i18n="transportation_title"></h2>
-        <p data-i18n="transportation_line1"></p>
-        <p data-i18n="transportation_line2"></p>
-      </div>
+      <div class="accordion" id="accordionExample">
 
-      <div class="py-3 border-bottom">
-        <h2>Parking:</h2>
-        <p data-i18n="parking"></p>
-      </div>
-
-      <div class="py-3">
-        <h2 data-i18n="sleep"></h2>
-        <div>
-          <h4><u>Camping:</u></h4>
-          <p data-i18n="camping"></p>
-        </div>
-
-        <div class="d-grid">
-          <u><h4 data-i18n="hotel"></h4></u>
-          <p data-i18n="lodging"></p>
-          <div class="d-grid">
-            <span><a href="https://maps.app.goo.gl/iRjyELukPfuuFk8v9" target="_blank">Logis Hôtel la Maison des Blés - Boutervilliers</a> - 10 minutes <span data-i18n="car"></span></span>
-            <span><a href="https://maps.app.goo.gl/HnUBwuNoRMZqrEEh8" target="_blank">Best Western - Dourdan</a> - 15 minutes <span data-i18n="car"></span></span>
-            <span><a href="https://maps.app.goo.gl/R2PggToQo7YdWwi26" target="_blank">Ibis - Étampes</a> - 15 minutes <span data-i18n="car"></span></span>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button data-i18n="program_title" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-i18n="transportation_title">
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="d-grid">
+                <h4><u>Mairie de Villeconin, 30 Grande Rue, 91580 Villeconin</u></h4>
+                <p data-i18n="program_mairie"></p>
+              </div>
+              <div class="d-grid">
+                <h4><u>Chateau de Villeconin, 6 Grand Rue, 91580 Villeconin</u></h4>
+                <p data-i18n="program_ceremony"></p>
+                <p data-i18n="program_cocktail"></p>
+                <p data-i18n="program_dinner"></p>
+                <p data-i18n="program_party"></p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="py-3">
-          <u><h4 data-i18n="airbnb"></h4></u>
-          <p data-i18n="gites"></p>
-          <a href="https://www.airbnb.com/s/Villeconin--France/homes" target="_blank">Airbnb</a>
-          <br>
-          <a href="https://www.gites-de-france.com/en/" target="_blank">Gites de France</a>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne" data-i18n="transportation_title">
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p data-i18n="transportation_line1"></p>
+              <p data-i18n="transportation_line2"></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+              Parking
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p data-i18n="parking"></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button data-i18n="sleep" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree"></button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="d-grid">
+                <u><h4 data-i18n="hotel"></h4></u>
+                <p data-i18n="lodging"></p>
+                <div class="d-grid">
+                  <span><a href="https://maps.app.goo.gl/iRjyELukPfuuFk8v9" target="_blank">Logis Hôtel la Maison des Blés - Boutervilliers</a> - 10 minutes <span data-i18n="car"></span></span>
+                  <span><a href="https://maps.app.goo.gl/HnUBwuNoRMZqrEEh8" target="_blank">Best Western - Dourdan</a> - 15 minutes <span data-i18n="car"></span></span>
+                  <span><a href="https://maps.app.goo.gl/R2PggToQo7YdWwi26" target="_blank">Ibis - Étampes</a> - 15 minutes <span data-i18n="car"></span></span>
+                </div>
+
+                <div class="py-3">
+                  <div>
+                    <h4><u>Camping:</u></h4>
+                    <p data-i18n="camping"></p>
+                  </div>
+
+
+                  <div class="py-3">
+                    <u><h4 data-i18n="airbnb"></h4></u>
+                    <p data-i18n="gites"></p>
+                    <a href="https://www.airbnb.com/s/Villeconin--France/homes" target="_blank">Airbnb</a>
+                    <br>
+                    <a href="https://www.gites-de-france.com/en/" target="_blank">Gites de France</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
