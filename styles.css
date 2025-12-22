@@ -25,13 +25,19 @@ body {
 
   /* Text & accents */
   --charcoal: #36454f;
+  --hunter: #08593e;
   --navy: #001f3f;
 }
 
 body {
-  background-color: var(--ivory);
-  color: var(--navy);
+  /* background-color: var(--ivory); */
+  background: white;
+  color: var(--hunter);
   font-family: "Montserrat", sans-serif;
+}
+
+.navbar .nav-link {
+  color: #08593e;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,21 +46,41 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 
+.accordion-button {
+  background-color: #fff;
+  background-image: none;
+  color: #08593e;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #0a7a55;
+  color: #fff;
+}
+
+.accordion-button:hover {
+  background-color: #0b8a61;
+  color: #fff;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
 .btn-primary {
-  --bs-btn-bg: var(--charcoal);
-  --bs-btn-border-color: var(--charcoal);
+  --bs-btn-bg: var(--hunter);
+  --bs-btn-border-color: var(--hunter);
   --bs-btn-hover-border-color: var(--charcoal);
-  --bs-btn-hover-bg: var(--beige);
+  --bs-btn-hover-bg: var(--hunter);
   --bs-btn-hover-color: var(--charcoal);
 }
 
 .btn-light {
   font-family: Cormorant Garamond, serif;;
-  --bs-btn-bg: var(--ivory);
-  --bs-btn-border-color: var(--charcoal);
+  --bs-btn-bg: white;
+  --bs-btn-border-color: var(--hunter);
   --bs-btn-hover-border-color: var(--charcoal);
-  --bs-btn-hover-bg: var(--beige);
-  --bs-btn-hover-color: var(--charcoal);
+  --bs-btn-hover-bg: var(--hunter);
+  --bs-btn-hover-color: white;
 }
 
 .paris-font {
