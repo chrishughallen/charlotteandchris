@@ -132,10 +132,11 @@ h1, h2 {
   .column {
     display: grid;
     gap: 1rem;
-    padding: 3rem;
+    padding: 1.5rem;
 
     @media (min-width: 1000px) {
       grid-template-columns: repeat(3, 1fr);
+       padding: 3rem;
     }
   }
 
@@ -164,11 +165,24 @@ h1, h2 {
 
 .info-section {
   padding: 2rem;
+  display: grid;
+  gap: 2rem;
+
+  article {
+    border: 1px solid rgba(0,0,0,10%);
+    padding: 2rem;
+    display: grid;
+    gap: 1.25rem;
+
+    div {
+      display: grid;
+      gap: 0.5rem;
+    }
+  }
 }
 
 .column {
   display: grid;
-  justify-content: center;
 
   @media (min-width: 1000px) {
     max-width: 100ch;
