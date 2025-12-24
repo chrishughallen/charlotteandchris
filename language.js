@@ -3,6 +3,13 @@ const langFr = document.getElementById('lang-fr');
 
 const translations = {
   en: {
+    what: "What?",
+    where: "Where?",
+    when: "When?",
+    are: "are",
+    and: "and",
+    getting: "getting",
+    married: "married",
     nav_home: "Home",
     nav_info: "Information",
     gifts: "Gift Registry",
@@ -10,9 +17,9 @@ const translations = {
     info_title: "Practical Information",
     info_cta: "Information",
     program_title: "Program:",
-    program_mairie: "3:00pm : Town Hall Ceremony",
-    program_ceremony: "4:30pm : Wedding Ceremony",
-    program_cocktail: "5:30pm : Cocktail Reception",
+    program_mairie: "3:00pm - Town Hall Ceremony",
+    program_ceremony: "4:30pm - Wedding Ceremony",
+    program_cocktail: "5:30pm - Cocktail",
     program_dinner: "8:00pm - Dinner",
     program_party: "10:30pm - Party",
     transportation_title: "Transportation",
@@ -29,6 +36,13 @@ const translations = {
   },
   
   fr: {
+    what: "Quoi ?",
+    where: "Où ?",
+    when: "Quand ?",
+    are: "vont",
+    and: "et",
+    getting: "se",
+    married: "marier",
     nav_home: "Accueil",
     nav_info: "Informations Pratiques",
     date: "30 Mai 2026",

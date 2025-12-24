@@ -1,0 +1,21 @@
+body {
+  /* background-color:white;
+  background-image:
+  radial-gradient(#08593e 9px, transparent 10px),
+  repeating-radial-gradient(#08593e 0, #08593e 4px, transparent 5px, transparent 20px, #08593e 21px, #08593e 25px, transparent 26px, transparent 50px);
+  background-size: 30px 30px, 90px 90px;
+  background-position: 0 0; */
+  color: #08593e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Cormorant Garamond, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.portrait-img {
+  aspect-ratio: 6 / 8;   /* portrait ratio */
+  object-fit: cover;
+  width: 100%;
+}
