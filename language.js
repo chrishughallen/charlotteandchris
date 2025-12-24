@@ -28,7 +28,7 @@ const translations = {
     parking: "If you plan to arrive with your own vehicle, there is parking available at the Chateau. Please let us know in your RSVP if you will be driving.",
     sleep: "Where to sleep?",
     camping: "Camping is available in the park of the chateau. Please let us know in your RSVP if you would like to camp. Camping equipment is not included, but you will have access to a bathroom.",
-    hotel: "Nearby Hotels",
+    hotel: "Hotels",
     lodging: "There are several hotels in the area, here are a few options:",
     airbnb: "Airbnbs and Gites",
     car: "by car",
