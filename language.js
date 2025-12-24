@@ -3,6 +3,10 @@ const langFr = document.getElementById('lang-fr');
 
 const translations = {
   en: {
+    days: "Days",
+    hours: "Hours",
+    minutes: "Minutes",
+    seconds: "Seconds",
     what: "What?",
     where: "Where?",
     when: "When?",
@@ -14,6 +18,8 @@ const translations = {
     nav_info: "Information",
     gifts: "Gift Registry",
     date: "May 30, 2026",
+    walk: "The chateau is a 5 minute walk. You are welcome to hang out in the park until the ceremony begins.",
+    welcome_paragraph: "We are so excited to celebrate our wedding with you! Below you will find all the practical information you need for the big day.",
     info_title: "Practical Information",
     info_cta: "Information",
     program_title: "Program:",
@@ -36,6 +42,10 @@ const translations = {
   },
   
   fr: {
+    days: "Jours",
+    hours: "Heures",
+    minutes: "Minutes",
+    seconds: "Secondes",
     what: "Quoi ?",
     where: "Où ?",
     when: "Quand ?",
@@ -48,6 +58,8 @@ const translations = {
     date: "30 Mai 2026",
     gifts: "Liste de Mariage",
     info_title: "Informations Pratiques",
+    walk: "Le château est situé à 5 minutes a pieds. Vous etes les bienvenues dans le parc en attendant la cérémonie.",
+    welcome_paragraph: "Nous sommes ravis de célébrer notre mariage avec vous ! Vous trouverez ci-dessous toutes les informations pratiques dont vous aurez besoin pour le grand jour.",
     info_cta: "Informations Pratiques",
     program_title: "Programme :",
     program_mairie: "15h00 : Mairie",

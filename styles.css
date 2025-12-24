@@ -11,6 +11,10 @@
   font-style: normal;
 }
 
+a {
+  color: #08593e;
+}
+
 .cormorant {
   font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;
@@ -128,15 +132,19 @@ h1, h2 {
 .what-where-when {
   background: #08593e;
   color: white;
+  padding: 1.5rem;
 
   .column {
     display: grid;
+    gap: 2rem;
+  }
+
+  .cards {
+    display: grid;
     gap: 1rem;
-    padding: 1.5rem;
 
     @media (min-width: 1000px) {
       grid-template-columns: repeat(3, 1fr);
-       padding: 3rem;
     }
   }
 
@@ -148,6 +156,68 @@ h1, h2 {
     @media (min-width: 600px) {
       text-align: center;
     }
+  }
+
+  .countdown {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    font-family: "Rammetto One", sans-serif;
+    font-size: 1.5rem;
+
+    div {
+      display: grid;
+      gap: .25rem;
+
+      small {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+.btn {
+  justify-self: center;
+  background: white;
+  display: block;
+  min-width: 200px;
+  padding: 1rem .5rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: background .2s, color .2s, border .2s;
+  font-family: "Montserrat", sans-serif;
+
+  &:hover {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+}
+
+.btn-dark {
+  background: #08593e;
+  color: white;
+  display: block;
+  min-width: 100px;
+  padding: .5rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: background .2s, color .2s, border .2s;
+  font-family: "Montserrat", sans-serif;
+
+  &:hover {
+    background: transparent;
+    color: #08593e;
+    border: 1px solid #08593e;
   }
 }
 
@@ -164,13 +234,12 @@ h1, h2 {
 }
 
 .info-section {
+  border-top: 1px solid rgba(0,0,0,0.1);
   padding: 2rem;
   display: grid;
   gap: 2rem;
 
   article {
-    border: 1px solid rgba(0,0,0,10%);
-    padding: 2rem;
     display: grid;
     gap: 1.25rem;
 
@@ -178,6 +247,12 @@ h1, h2 {
       display: grid;
       gap: 0.5rem;
     }
+  }
+
+  ul {
+    list-style: none;
+    display: grid;
+    gap: .5rem;
   }
 }
 
@@ -190,8 +265,39 @@ h1, h2 {
   }
 }
 
-iframe {
-  min-height: 800px; /* adjust depending on form length */
+.column-2 {
+  display: flex;
+  flex-direction: column-reverse;
+
+
+  @media (min-width: 1000px) {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+.info-p {
+  background: #08593e;
+  color: white;
+  border-radius: 8px;
+  padding: .5rem;
+}
+
+.rsvp {
+  max-width: 800px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+  }
+
+  iframe {
+    min-height: 800px; /* adjust depending on form length */
+    width: 100%;
+  }
 }
 
 /* NAV */

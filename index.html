@@ -19,6 +19,7 @@
 <nav class="lang-switcher position-fixed top-0 end-0 p-3 z-3">
   <h2><a href="index.html">C&C</a></h2>
   <div>
+    <a class="btn-dark" href="rsvp.html">RSVP</a>
     <img src="en.svg" alt="English" id="lang-en" class="lang-icon">
     <img src="fr.svg" alt="French" id="lang-fr" class="lang-icon selected">
   </div>
@@ -42,23 +43,33 @@
 
   <section class="what-where-when">
     <div class="column">
-      <article>
-        <h1 data-i18n="what"></h1>
-        <p>An international wedding!</p>
-      </article>
-      <article>
-        <h1 data-i18n="where"></h1>
-        <p>Chateau de Villeconin, France</p>
-      </article>
-      <article>
-        <h1 data-i18n="when"></h1>
-        <p>May 30th, 2026</p>
-      </article>
+      <div class="countdown" data-date="2026-05-30T15:00:00">
+        <div><span data-days>0</span><small data-i18n="days"></small></div>
+        <div><span data-hours>0</span><small data-i18n="hours"></small></div>
+        <div><span data-minutes>0</span><small data-i18n="minutes"></small></div>
+        <div><span data-seconds>0</span><small data-i18n="seconds"></small></div>
+      </div>
+      <div class="cards">
+        <article>
+          <h1 data-i18n="what"></h1>
+          <p>An international wedding!</p>
+        </article>
+        <article>
+          <h1 data-i18n="where"></h1>
+          <p>Chateau de Villeconin, France</p>
+        </article>
+        <article>
+          <h1 data-i18n="when"></h1>
+          <p>May 30th, 2026</p>
+        </article>
+      </div>
+
+      <a class="btn" href="rsvp.html">RSVP</a>
     </div>
   </section>
 
   <section class="column">
-    <p class="big-p">We would be delighted for you to join us on our special day. Below are some practical details to help you plan your visit.</p>
+    <p data-i18n="welcome_paragraph" class="big-p"></p>
   </section>
 
   <div class="column">
@@ -66,84 +77,127 @@
     <section class="info-section">
 
       <!-- PROGRAM -->
-      <article>
-        <h2 data-i18n="program_title"></h2>
-
+      <article class="column-2">
         <div>
-          <h3>Mairie de Villeconin</h3>
-          <p><strong>30 Grande Rue, 91580 Villeconin</strong></p>
-          <p data-i18n="program_mairie"></p>
+          <h2 data-i18n="program_title"></h2>
+          <div>
+            <h3>Mairie de Villeconin</h3>
+            <p><strong>30 Grande Rue, 91580 Villeconin</strong></p>
+            <p data-i18n="program_mairie"></p>
+            <p data-i18n="walk" class="info-p"></p>
+          </div>
+          <div>
+            <h3>Château de Villeconin</h3>
+            <p><strong>6 Grand Rue, 91580 Villeconin</strong></p>
+            <p data-i18n="program_ceremony"></p>
+            <p data-i18n="program_cocktail"></p>
+            <p data-i18n="program_dinner"></p>
+            <p data-i18n="program_party"></p>
+          </div>
         </div>
-        <div>
-          <h3>Château de Villeconin</h3>
-          <p><strong>6 Grand Rue, 91580 Villeconin</strong></p>
-          <p data-i18n="program_ceremony"></p>
-          <p data-i18n="program_cocktail"></p>
-          <p data-i18n="program_dinner"></p>
-          <p data-i18n="program_party"></p>
-        </div>
+        <img src="inside.jpg" alt="Chateau de Villeconin interior">
       </article>
 
       <!-- TRANSPORT -->
-      <article>
-        <h2 data-i18n="transportation_title"></h2>
-        <p data-i18n="transportation_line1"></p>
-        <p data-i18n="transportation_line2"></p>
+      <article class="column-2">
+        <div>
+          <h2 data-i18n="transportation_title"></h2>
+          <p data-i18n="transportation_line1"></p>
+          <p data-i18n="transportation_line2"></p>
+        </div>
+        <img src="car.jpg" alt="Car on road">
       </article>
 
       <!-- PARKING -->
-      <article>
-        <h2>Parking</h2>
-        <p data-i18n="parking"></p>
+      <article class="column-2">
+        <div>
+          <h2>Parking</h2>
+          <p data-i18n="parking"></p>
+        </div>
+        <img src="parking.jpg" alt="Parking lot">
       </article>
 
       <!-- ACCOMMODATION -->
-      <article>
-        <h2 data-i18n="sleep"></h2>
-        <!-- HOTELS -->
+      <article class="column-2">
         <div>
-          <h3 data-i18n="hotel"></h3>
-          <p data-i18n="lodging"></p>
-          <ul>
-            <li>
-              <a href="https://maps.app.goo.gl/iRjyELukPfuuFk8v9" target="_blank">
-                Logis Hôtel la Maison des Blés
-              </a>
-              — 10 min <span data-i18n="car"></span>
-            </li>
-            <li>
-              <a href="https://maps.app.goo.gl/HnUBwuNoRMZqrEEh8" target="_blank">
-                Best Western – Dourdan
-              </a>
-              — 15 min <span data-i18n="car"></span>
-            </li>
-            <li>
-              <a href="https://maps.app.goo.gl/R2PggToQo7YdWwi26" target="_blank">
-                Ibis – Étampes
-              </a>
-              — 15 min <span data-i18n="car"></span>
-            </li>
-          </ul>
-        </div>
+          <h2 data-i18n="sleep"></h2>
+          <!-- HOTELS -->
+          <div>
+            <h3 data-i18n="hotel"></h3>
+            <p data-i18n="lodging"></p>
+            <ul>
+              <li>
+                <a href="https://maps.app.goo.gl/iRjyELukPfuuFk8v9" target="_blank">
+                  Logis Hôtel la Maison des Blés
+                </a>
+                — 10 min <span data-i18n="car"></span>
+              </li>
+              <li>
+                <a href="https://maps.app.goo.gl/HnUBwuNoRMZqrEEh8" target="_blank">
+                  Best Western – Dourdan
+                </a>
+                — 15 min <span data-i18n="car"></span>
+              </li>
+              <li>
+                <a href="https://maps.app.goo.gl/R2PggToQo7YdWwi26" target="_blank">
+                  Ibis – Étampes
+                </a>
+                — 15 min <span data-i18n="car"></span>
+              </li>
+            </ul>
+          </div>
 
-      <!-- OTHER OPTIONS -->
-        <div>
-          <h3>Camping</h3>
-          <p data-i18n="camping"></p>
-        </div>
+        <!-- OTHER OPTIONS -->
+          <div>
+            <h3>Camping</h3>
+            <p data-i18n="camping"></p>
+          </div>
 
-        <div>
-          <h3 data-i18n="airbnb"></h3>
-          <p data-i18n="gites"></p>
-          <a href="https://www.airbnb.com/s/Villeconin--France/homes" target="_blank">Airbnbs</a><br>
-          <a href="https://www.gites-de-france.com/en/" target="_blank">Gîtes de France</a>
+          <div>
+            <h3 data-i18n="airbnb"></h3>
+            <p data-i18n="gites"></p>
+            <a href="https://www.airbnb.com/s/Villeconin--France/homes" target="_blank">Airbnbs</a>
+            <a href="https://www.gites-de-france.com/en/" target="_blank">Gîtes de France</a>
+          </div>
         </div>
+        <img src="sleep.jpg" alt="cat asleep">
       </article>
     </section>
   </div>
 </main>
 
 <script src="language.js"></script>
+<script>
+  function startCountdown(el) {
+    const target = new Date(el.dataset.date).getTime()
+
+    const update = () => {
+      const now = Date.now()
+      const diff = target - now
+
+      if (diff <= 0) {
+        clearInterval(timer)
+        el.innerHTML = "<strong>It's happening! 🎉</strong>"
+        return
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24))
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24)
+      const minutes = Math.floor((diff / (1000 * 60)) % 60)
+      const seconds = Math.floor((diff / 1000) % 60)
+
+      el.querySelector('[data-days]').textContent = days
+      el.querySelector('[data-hours]').textContent = hours
+      el.querySelector('[data-minutes]').textContent = minutes
+      el.querySelector('[data-seconds]').textContent = seconds
+    }
+
+    update()
+    const timer = setInterval(update, 1000)
+  }
+
+  document.querySelectorAll('.countdown').forEach(startCountdown)
+</script>
 
 </body>
 </html>
