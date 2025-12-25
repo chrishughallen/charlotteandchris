@@ -7,8 +7,8 @@ const translations = {
     hours: "Hours",
     minutes: "Minutes",
     seconds: "Seconds",
-    what: "What?",
-    what_content: "Two countries. Two cultures. One very good reason to celebrate.",
+    dress: "Dress code?",
+    dress_content: "We invite you to dress up and feel good! Elegant, festive attire.",
     where: "Where?",
     when: "When?",
     when_content: "May 30, 2026",
@@ -21,7 +21,7 @@ const translations = {
     gifts: "Gift Registry",
     date: "May 30, 2026",
     walk: "The chateau is a 5 minute walk. You are welcome to hang out in the park until the ceremony begins.",
-    welcome_paragraph: "We are so excited to celebrate our wedding with you! Below you will find all the practical information you need for the big day.",
+    welcome_paragraph: "Two countries. Two cultures. One very good reason to celebrate. We are so excited for you to join us on our wedding day! Below you will find all the practical information you need. For any further questions, feel free to reach out to us directly or send us an ",
     info_title: "Practical Information",
     info_cta: "Information",
     program_title: "Program:",
@@ -49,8 +49,8 @@ const translations = {
     hours: "Heures",
     minutes: "Minutes",
     seconds: "Secondes",
-    what: "Quoi ?",
-    what_content: "Deux pays. Deux cultures. Une très bonne raison de faire la fête.",
+    dress: "Code vestimentaire ?",
+    dress_content: "Nous vous invitons à vous habiller élégamment et festivement, comme vous vous sentez bien.",
     where: "Où ?",
     when: "Quand ?",
     when_content: "30 Mai 2026",
@@ -64,7 +64,7 @@ const translations = {
     gifts: "Liste de Mariage",
     info_title: "Informations Pratiques",
     walk: "Le château est situé à 5 minutes a pieds. Vous etes les bienvenues dans le parc en attendant la cérémonie.",
-    welcome_paragraph: "Nous sommes ravis de célébrer notre mariage avec vous ! Vous trouverez ci-dessous toutes les informations pratiques dont vous aurez besoin pour le grand jour.",
+    welcome_paragraph: "Deux pays. Deux cultures. Une très bonne raison de faire la fête. Nous sommes ravis de vous compter parmi nous pour le jour de notre mariage ! Vous trouverez ci-dessous toutes les informations pratiques dont vous aurez besoin. Pour toute question supplémentaire, n'hésitez pas à nous contacter directement ou à nous envoyer un ",
     info_cta: "Informations Pratiques",
     program_title: "Programme :",
     program_mairie: "15h00 : Mairie",
@@ -87,6 +87,70 @@ const translations = {
   }
 };
 
+const faqEn = [
+  {
+    question: "Can I bring a plus one?",
+    answer: "Due to space limitations at the venue, we’re unfortunately unable to accommodate additional guests. Thank you so much for understanding — we can’t wait to celebrate with you!"
+  },
+  {
+    question: "Are children welcome?",
+    answer: "Yes, children are welcome! Please note that there will be no babysitting service on site."
+  },
+  {
+    question: "I have dietary restrictions — what should I do?",
+    answer: "You can let us know about any dietary restrictions in the RSVP form, and we’ll do our very best to accommodate you."
+  },
+  {
+    question: "What time does the celebration end?",
+    answer: "The DJ is booked until 5:00 AM — so bring your dancing shoes!"
+  },
+  {
+    question: "What is the weather usually like at the end of May?",
+    answer: "Late May in the Île-de-France region is generally mild and pleasant, with daytime temperatures around 18–22°C (65–72°F). Evenings can be cooler, so we recommend bringing a light jacket."
+  }
+];
+
+const faqFr = [
+  {
+    question: "Puis-je venir accompagné(e) ?",
+    answer: "En raison des contraintes de capacité du lieu, nous ne pourrons malheureusement pas accueillir d’invités supplémentaires. Merci beaucoup de votre compréhension — nous avons hâte de célébrer avec vous !"
+  },
+  {
+    question: "Les enfants sont-ils les bienvenus ?",
+    answer: "Oui, les enfants sont les bienvenus. Merci de noter qu’il n’y aura pas de service de garde d’enfants sur place."
+  },
+  {
+    question: "J’ai des restrictions alimentaires — que faire ?",
+    answer: "Vous pouvez nous indiquer toute restriction alimentaire dans le formulaire RSVP, et nous ferons de notre mieux pour nous adapter."
+  },
+  {
+    question: "À quelle heure se termine la fête ?",
+    answer: "Le DJ est prévu jusqu’à 5h du matin — la piste de danse sera ouverte longtemps !"
+  },
+  {
+    question: "Quel temps fait-il généralement à la fin du mois de mai ?",
+    answer: "Fin mai en Île-de-France, le temps est généralement doux et agréable, avec des températures autour de 18–22°C en journée. Les soirées peuvent être plus fraîches — prévoyez une petite veste."
+  }
+];
+
+function renderFAQ(faqArray) {
+  const container = document.getElementById("faq");
+  container.innerHTML = ""; // clear existing content
+
+  faqArray.forEach(item => {
+    const block = document.createElement("div")
+    const question = document.createElement("h3");
+    question.textContent = item.question;
+
+    const answer = document.createElement("p");
+    answer.textContent = item.answer;
+
+    block.appendChild(question);
+    block.appendChild(answer);
+    container.appendChild(block);
+  });
+}
+
 langEn.addEventListener('click', () => { 
     setLanguage('en');
 });
@@ -102,9 +166,11 @@ function setLanguage(lang) {
   if( lang == 'en' ) {
    langEn.classList.add('selected');
    langFr.classList.remove('selected');
+   renderFAQ(faqEn);
   } else {
     langFr.classList.add('selected');
     langEn.classList.remove('selected');
+    renderFAQ(faqFr);
   }
 
   // Update UI text
