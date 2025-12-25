@@ -89,10 +89,6 @@ const translations = {
 
 const faqEn = [
   {
-    question: "Can I bring a plus one?",
-    answer: "Due to space limitations at the venue, we’re unfortunately unable to accommodate additional guests. Thank you so much for understanding — we can’t wait to celebrate with you!"
-  },
-  {
     question: "Are children welcome?",
     answer: "Yes, children are welcome! Please note that there will be no babysitting service on site."
   },
@@ -107,14 +103,14 @@ const faqEn = [
   {
     question: "What is the weather usually like at the end of May?",
     answer: "Late May in the Île-de-France region is generally mild and pleasant, with daytime temperatures around 18–22°C (65–72°F). Evenings can be cooler, so we recommend bringing a light jacket."
-  }
+  },
+  {
+    question: "Can I bring a plus one?",
+    answer: "Due to space limitations at the venue, we’re unfortunately unable to accommodate additional guests. Thank you so much for understanding — we can’t wait to celebrate with you!"
+  },
 ];
 
 const faqFr = [
-  {
-    question: "Puis-je venir accompagné(e) ?",
-    answer: "En raison des contraintes de capacité du lieu, nous ne pourrons malheureusement pas accueillir d’invités supplémentaires. Merci beaucoup de votre compréhension — nous avons hâte de célébrer avec vous !"
-  },
   {
     question: "Les enfants sont-ils les bienvenus ?",
     answer: "Oui, les enfants sont les bienvenus. Merci de noter qu’il n’y aura pas de service de garde d’enfants sur place."
@@ -130,7 +126,11 @@ const faqFr = [
   {
     question: "Quel temps fait-il généralement à la fin du mois de mai ?",
     answer: "Fin mai en Île-de-France, le temps est généralement doux et agréable, avec des températures autour de 18–22°C en journée. Les soirées peuvent être plus fraîches — prévoyez une petite veste."
-  }
+  },
+  {
+    question: "Puis-je venir accompagné(e) ?",
+    answer: "En raison des contraintes de capacité du lieu, nous ne pourrons malheureusement pas accueillir d’invités supplémentaires. Merci beaucoup de votre compréhension — nous avons hâte de célébrer avec vous !"
+  },
 ];
 
 function renderFAQ(faqArray) {
