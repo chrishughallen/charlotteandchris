@@ -1,5 +1,5 @@
 nav {
-  border-bottom: var(--border-light);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.08);
   display: flex;
   gap: var(--sp-xs);
   justify-content: space-between;
@@ -8,17 +8,18 @@ nav {
   padding-inline: var(--sp-sm);
   position: sticky;
   top: 0;
-  background: var(--color-light);
+  background: var(--color-primary);
+  color: var(--color-light);
   z-index: 1;
 
   a.brand {
     text-decoration: none;
-    color: var(--color-primary);
+    color: var(--color-light);
     font-size: 1.25rem;
     font-family: var(--font-fun);
 
     &:visited {
-      color: var(--color-primary);
+      color: var(--color-light);
     }
   }
 
@@ -28,7 +29,7 @@ nav {
     align-items: center;
 
     a {
-      color: var(--color-primary);
+      color: var(--color-light);
     }
 
     .lang-icon {

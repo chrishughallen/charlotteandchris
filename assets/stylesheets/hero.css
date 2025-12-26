@@ -2,7 +2,7 @@
   grid-column: full-start / full-end;
   position: relative;
   height: 100%;
-  min-height: calc(100vh - var(--nav-height));
+  min-height: calc(100svh - var(--nav-height));
   font-family: var(--font-fun);
   color: var(--color-light);
   font-size: 2.5rem;
@@ -21,7 +21,6 @@
 
     @media (min-width: 768px) {
       font-size: 3rem;
-      align-content: start;
       padding: var(--sp-lg) 0 0 var(--sp-lg);
     }
   }

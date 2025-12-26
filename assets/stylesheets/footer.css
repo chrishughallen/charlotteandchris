@@ -4,6 +4,7 @@ footer {
   background: var(--color-primary);
   color: var(--color-light);
   align-content: center;
+  min-height: calc(100svh - var(--nav-height));
 
   @media (min-width: 768px) {
     margin-top: var(--sp-lg);
@@ -11,12 +12,7 @@ footer {
   }
 
   img {
-    aspect-ratio: 6 / 8;
-
-    @media (min-width: 768px) {
-      max-width: 500px;
-      margin: 0 auto;
-    }
+    aspect-ratio: initial;
   }
 
   p {

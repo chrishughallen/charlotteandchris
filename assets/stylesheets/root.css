@@ -12,8 +12,7 @@
   --sp-md: 1.25rem;
   --sp-lg: 2rem;
   --sp-xl: 4rem;
-  --border-light: 1px solid rgba(0,0,0,0.1);
-  --border-white: 1px solid var(--color-light);
+  --border-light: 1px solid var(--color-light);
   --border-primary: 1px solid var(--color-primary);
 }
 
