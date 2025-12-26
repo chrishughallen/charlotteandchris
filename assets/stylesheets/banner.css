@@ -12,25 +12,6 @@
     display: grid;
     gap: var(--sp-md);
 
-    .countdown {
-      display: grid;
-      grid-template-columns: repeat(4, auto);
-      gap: var(--sp-sm);
-      justify-content: center;
-      text-align: center;
-      font-family: var(--font-fun);
-      font-size: 1.5rem;
-
-      div {
-        display: grid;
-
-        small {
-          font-size: 0.75rem;
-          font-family: var(--font-sans-serif);
-        }
-      }
-    }
-
     .items {
       display: grid;
       gap: var(--sp-sm);
