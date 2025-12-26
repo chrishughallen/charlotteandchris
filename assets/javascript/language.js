@@ -62,7 +62,7 @@ const translations = {
   },
   
   fr: {
-    gift_link: "Cadeaux",
+    gift_link: "Liste",
     days: "Jours",
     hours: "Heures",
     minutes: "Minutes",
