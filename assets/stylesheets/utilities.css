@@ -28,22 +28,25 @@
 
 /* BIG STANDOUT PARAGRAPH */
 .big-p {
-  grid-column: center-start / center-end;
-  padding-block: var(--sp-md);
+  min-height: calc(100svh - var(--nav-height));
+  padding: var(--sp-md);
+  background: var(--color-primary);
+  display: grid;
+  align-content: center;
+  margin-bottom: var(--sp-lg);
 
   @media (min-width: 768px) {
-    max-width: 100ch;
-    margin: 0 auto;
+    margin-bottom: var(--sp-xl);
   }
 
   p {
     font-size: var(--fs-lg);
-    font-family: var(--font-fun);
-    color: var(--color-primary);
+    color: var(--color-light);
     text-wrap-style: balance;
 
     @media (min-width: 768px) {
       font-size: var(--fs-xl);
+      max-width: 50ch;
     }
 
     a {
@@ -70,6 +73,7 @@ a.btn {
   text-decoration: none;
   min-width: 200px;
 
+  a.btn--primary,
   &.btn--primary {
     background: var(--color-primary);
     color: var(--color-light);;
@@ -91,6 +95,18 @@ a.btn {
       background: var(--color-primary);
       color: var(--color-light);
       border: var(--border-light);
+    }
+  }
+
+  a.btn--dark,
+  &.btn--dark {
+    background: var(--color-dark);
+    color: var(--color-light);
+
+    &:hover {
+      background: transparent;
+      color: var(--color-dark);
+      border: 1px solid var(--color-dark);
     }
   }
 
