@@ -9,15 +9,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rammetto+One&display=swap" rel="stylesheet">
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="stylesheets/root.css">
-  <link rel="stylesheet" href="stylesheets/nav.css">
-  <link rel="stylesheet" href="stylesheets/rsvp.css">
+  <link rel="stylesheet" href="../assets/stylesheets/root.css">
+  <link rel="stylesheet" href="../assets/stylesheets/nav.css">
+  <link rel="stylesheet" href="../assets/stylesheets/rsvp.css">
 
   <title>Chris & Charlotte 2026 | Home</title>
 </head>
   <body>
-    <nav class="lang-switcher position-fixed top-0 end-0 p-3 z-3">
-      <h2><a href="index.html">C&C</a></h2>
+    <nav>
+      <a class="brand" href="../index.html">C&C</a>
+      <div class="nav-links">
+        <a class="nav-link" href="#">RSVP</a>
+        <a class="nav-link" href="../index.html#gift" data-i18n="gift_link"></a>
+        <img src="../assets/icons/en.svg" alt="English" id="lang-en" class="lang-icon">
+        <img src="../assets/icons/fr.svg" alt="French" id="lang-fr" class="lang-icon selected">
+      </div>
     </nav>
 
     <main class="rsvp">
@@ -31,5 +37,6 @@
       </iframe>
     </main>
 
+  <script src="../assets/javascript/language.js" defer></script>
   </body>
 </html>

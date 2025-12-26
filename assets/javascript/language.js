@@ -3,6 +3,7 @@ const langFr = document.getElementById('lang-fr');
 
 const translations = {
   en: {
+    gift_link: "Gift List",
     days: "Days",
     hours: "Hours",
     minutes: "Minutes",
@@ -12,6 +13,7 @@ const translations = {
     where: "Where?",
     when: "When?",
     when_content: "May 30, 2026",
+    rsvp_deadline: "Please RSVP by March 15, 2026",
     are: "are",
     and: "and",
     getting: "getting",
@@ -60,6 +62,7 @@ const translations = {
   },
   
   fr: {
+    gift_link: "Cadeaux",
     days: "Jours",
     hours: "Heures",
     minutes: "Minutes",
@@ -68,6 +71,7 @@ const translations = {
     dress_content: "Nous vous invitons à vous habiller élégamment et festivement, comme vous vous sentez bien.",
     where: "Où ?",
     when: "Quand ?",
+    rsvp_deadline: "Merci de confirmer votre présence avant le 15 Mars 2026",
     when_content: "30 Mai 2026",
     are: "vont",
     and: "et",

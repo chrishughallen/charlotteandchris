@@ -1,16 +1,27 @@
 :root {
-  scroll-behavior: smooth;
+  --nav-height: 4rem;
   --color-primary: #08593e;
   --color-dark: #2E2E2E;
   --color-light: #fff;
   --font-sans-serif: 'Montserrat', sans-serif;
   --font-fun: 'Rammetto One', sans-serif;
+  --fs-lg: 1.25rem;
+  --fs-xl: 2rem;
+  --sp-xs: .5rem;
+  --sp-sm: 1rem;
+  --sp-md: 1.25rem;
+  --sp-lg: 2rem;
+  --sp-xl: 4rem;
+  --border-light: 1px solid rgba(0,0,0,0.1);
+  --border-white: 1px solid var(--color-light);
+  --border-primary: 1px solid var(--color-primary);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-padding-top: var(--nav-height);
 }
 
 html {
@@ -23,8 +34,10 @@ body {
 }
 
 img {
+  display: block;
   width: 100%;
   object-fit: cover;
+  aspect-ratio: 6 / 8;
 }
 
 main > article {

@@ -1,10 +1,10 @@
 .faq {
   display: grid;
-  gap: 1.5rem;
+  gap: var(--sp-lg);
 
   div {
     display: grid;
-    gap: .5rem;
+    gap: var(--sp-xs);
     text-wrap-style: balance;
   }
 }

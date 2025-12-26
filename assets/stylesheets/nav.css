@@ -1,38 +1,44 @@
 nav {
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: var(--border-light);
   display: flex;
-  gap: .5rem;
+  gap: var(--sp-xs);
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
-  padding-inline: 1.25rem;
+  height: var(--nav-height);
+  padding-inline: var(--sp-sm);
   position: sticky;
   top: 0;
-  background: white;
-  z-index: 2;
+  background: var(--color-light);
+  z-index: 1;
 
-  & > div {
-    display: flex;
-    gap: .5rem;
-    align-items: center;
-  }
+  a.brand {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    font-family: var(--font-fun);
 
-  h2 {
-    a {
-      text-decoration: none;
-      &:visited {
-        color: inherit;
-      }
+    &:visited {
+      color: var(--color-primary);
     }
   }
 
-  .lang-icon {
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
+  .nav-links {
+    display: flex;
+    gap: var(--sp-sm);
+    align-items: center;
 
-    &:not(.selected) {
-      opacity: 0.5;
+    a {
+      color: var(--color-primary);
+    }
+
+    .lang-icon {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+
+      &:not(.selected) {
+        opacity: 0.5;
+      }
     }
   }
 }

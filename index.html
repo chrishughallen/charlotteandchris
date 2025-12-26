@@ -23,10 +23,11 @@
 <body>
 
 <!-- NAV BAR -->
-<nav class="lang-switcher">
-  <h2><a href="index.html">C&C</a></h2>
-  <div>
-    <a class="btn btn--primary btn--sm" href="views/rsvp.html">RSVP</a>
+<nav>
+  <a class="brand" href="index.html">C&C</a>
+  <div class="nav-links">
+    <a class="nav-link" href="views/rsvp.html">RSVP</a>
+    <a class="nav-link" href="#gift" data-i18n="gift_link"></a>
     <img src="assets/icons/en.svg" alt="English" id="lang-en" class="lang-icon">
     <img src="assets/icons/fr.svg" alt="French" id="lang-fr" class="lang-icon selected">
   </div>
@@ -70,7 +71,8 @@
         </article>
       </div>
 
-      <a class="btn btn--light" href="rsvp.html">RSVP</a>
+      <a class="btn btn--light" href="views/rsvp.html">RSVP</a>
+      <small data-i18n="rsvp_deadline"></small>
     </div>
   </section>
 
@@ -170,7 +172,7 @@
       </div>
     </article>
 
-    <article class="col-2">
+    <article id="gift" class="col-2">
       <div class="card">
         <img src="assets/images/gift.png" alt="Gift table">
         <div class="overlay" data-i18n="gift_title"></div>
@@ -216,7 +218,7 @@
   <footer>
     <div class="col-2">
       <img src="assets/images/collage.jpg" alt="Collage of Chris and Charlotte">
-      <div>
+      <div class="container">
         <p data-i18n="footer"></p>
         <small>- Chris & Charlotte</small>
       </div>

@@ -2,29 +2,28 @@
   grid-column: full-start / full-end;
   position: relative;
   height: 100%;
-  min-height: calc(100vh - 4rem);
+  min-height: calc(100vh - var(--nav-height));
   font-family: var(--font-fun);
   color: var(--color-light);
   font-size: 2.5rem;
   line-height: 1;
 
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     font-size: 4rem;
     max-width: 600px;
     margin: 0 auto;
   }
 
   .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0,0,0,25%);
-    display: grid;
     align-content: end;
-    padding-bottom: 2rem;
-    padding-left: 1rem;
+    justify-content: start;
+    padding: 0 0 var(--sp-md) var(--sp-md);
+
+    @media (min-width: 768px) {
+      font-size: 3rem;
+      align-content: start;
+      padding: var(--sp-lg) 0 0 var(--sp-lg);
+    }
   }
 
   img {
