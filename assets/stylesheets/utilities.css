@@ -33,7 +33,6 @@
   background: var(--color-primary);
   display: grid;
   align-content: center;
-  margin-bottom: var(--sp-lg);
 
   @media (min-width: 768px) {
     margin-bottom: var(--sp-xl);
@@ -47,11 +46,16 @@
     @media (min-width: 768px) {
       font-size: var(--fs-xl);
       max-width: 50ch;
+      margin: 0 auto;
     }
 
     a {
       display: inline;
       color: inherit;
+    }
+
+    span.fun {
+      font-family: var(--font-fun);
     }
   }
 }
