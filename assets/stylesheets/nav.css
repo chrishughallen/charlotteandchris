@@ -8,18 +8,18 @@ nav {
   padding-inline: var(--sp-sm);
   position: sticky;
   top: 0;
-  background: var(--color-primary);
-  color: var(--color-light);
+  background: var(--color-light);
+  color: var(--color-primary);
   z-index: 1;
 
   a.brand {
     text-decoration: none;
-    color: var(--color-light);
+    color: var(--color-primary);
     font-size: 1.25rem;
     font-family: var(--font-fun);
 
     &:visited {
-      color: var(--color-light);
+      color: var(--color-primary);
     }
   }
 
@@ -29,7 +29,7 @@ nav {
     align-items: center;
 
     a {
-      color: var(--color-light);
+      color: var(--color-primary);
     }
 
     .lang-icon {

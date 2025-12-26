@@ -40,14 +40,21 @@
       display: grid;
       gap: var(--sp-xs);
       opacity: 0.8;
-    }
 
-    ul {
-      list-style: none;
-      display: grid;
-      gap:  var(--sp-xs);
-    }
 
+      ul {
+        list-style: none;
+        display: grid;
+        gap:  var(--sp-xs);
+
+        li {
+          a {
+            padding-bottom: 0 !important;
+          }
+        }
+      }
+    }
+  
     a:not(.btn) {
       color: var(--color-primary);
       padding-bottom: var(--sp-xs);

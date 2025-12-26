@@ -1,7 +1,7 @@
 .banner {
   grid-column: full-start / full-end;
-  background: var(--color-primary);
-  color: var(--color-light);
+  /* background: var(--color-primary); */
+  /* color: var(--color-light); */
 
   @media (min-width: 768px) {
     margin-top: var(--sp-lg);
@@ -23,7 +23,8 @@
       }
       
       .item {
-        border: 1px solid rgba(255, 255, 255, 30%);
+        background: var(--color-primary);
+        color: var(--color-light);
         padding: var(--sp-md);
         border-radius: 8px;
         font-size: 1rem;
