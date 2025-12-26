@@ -1,0 +1,33 @@
+footer {
+  min-height: calc(100vh - 4rem);
+  display: grid;
+  gap: 1.25rem;
+  background: var(--color-primary);
+  color: var(--color-light);
+  padding: 2rem 1rem;
+  align-content: center;
+
+  @media (min-width: 600px) {
+    margin-top: 2rem;
+  }
+
+  img {
+    aspect-ratio: 6 / 8;
+
+    @media (min-width: 600px) {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  p {
+    font-size: 1.25rem;
+    font-family: var(--font-fun);
+    text-wrap-style: balance;
+
+    @media (min-width: 600px) {
+      text-align: left;
+      font-size: 2rem;
+    }
+  }
+}

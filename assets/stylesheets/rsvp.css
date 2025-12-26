@@ -1,0 +1,14 @@
+
+.rsvp {
+  max-width: 800px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+  }
+
+  iframe {
+    min-height: 800px; /* adjust depending on form length */
+    width: 100%;
+  }
+}

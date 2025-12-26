@@ -1,0 +1,57 @@
+.banner {
+  grid-column: full-start / full-end;
+  background: var(--color-primary);
+  color: var(--color-light);
+
+  @media (min-width: 600px) {
+    margin-top: 2rem;
+    padding-block: 2.5rem;
+  }
+
+  .container {
+    display: grid;
+    gap: 1.25rem;
+
+    .countdown {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      gap: 1rem;
+      justify-content: center;
+      text-align: center;
+      font-family: var(--font-fun);
+      font-size: 1.5rem;
+
+      div {
+        display: grid;
+        gap: .25rem;
+
+        small {
+          font-size: 0.75rem;
+        }
+      }
+    }
+
+    .items {
+      display: grid;
+      gap: 1rem;
+
+      @media (min-width: 1000px) {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      
+      .item {
+        border: 1px solid rgba(255, 255, 255, 30%);
+        padding: 1rem;
+        border-radius: 8px;
+        font-size: 1rem;
+        text-align: center;
+
+        a {
+          color: var(--color-light);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+nav {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  gap: .5rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  padding-inline: 1.25rem;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 2;
+
+  & > div {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+  }
+
+  h2 {
+    a {
+      text-decoration: none;
+      &:visited {
+        color: inherit;
+      }
+    }
+  }
+
+  .lang-icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+    &:not(.selected) {
+      opacity: 0.5;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+:root {
+  scroll-behavior: smooth;
+  --color-primary: #08593e;
+  --color-dark: #2E2E2E;
+  --color-light: #fff;
+  --font-sans-serif: 'Montserrat', sans-serif;
+  --font-fun: 'Rammetto One', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-dark);
+  font-family: var(--font-sans-serif);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+main > article {
+  display: grid;
+  gap: 1.5rem;
+}
+
+h1, h2 {
+  font-family: var(--font-fun);
+}
