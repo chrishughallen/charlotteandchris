@@ -5,6 +5,7 @@
   --color-light: #fdfdfd;
   --font-sans-serif: 'Montserrat', sans-serif;
   --font-fun: 'Rammetto One', sans-serif;
+  --fs-md: 1rem;
   --fs-lg: 1.25rem;
   --fs-xl: 2rem;
   --sp-xs: .5rem;
@@ -25,6 +26,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-anchor: none;
 }
 
 body {
@@ -46,4 +48,16 @@ main > article {
 
 h1, h2 {
   font-family: var(--font-fun);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }

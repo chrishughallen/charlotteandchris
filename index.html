@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="assets/stylesheets/utilities.css">
   <link rel="stylesheet" href="assets/stylesheets/nav.css">
   <link rel="stylesheet" href="assets/stylesheets/hero.css">
+  <link rel="stylesheet" href="assets/stylesheets/countdown.css">
   <link rel="stylesheet" href="assets/stylesheets/banner.css">
   <link rel="stylesheet" href="assets/stylesheets/info-section.css">
   <link rel="stylesheet" href="assets/stylesheets/faq.css">
@@ -23,7 +24,7 @@
 <body>
 
 <!-- NAV BAR -->
-<nav>
+<nav class="reveal">
   <a class="brand" href="index.html">C&C</a>
   <div class="nav-links">
     <a class="nav-link" href="views/rsvp.html">RSVP</a>
@@ -34,7 +35,7 @@
 </nav>
 
 <main class="d-grid-container">
-  <section class="hero">
+  <section class="hero reveal">
     <img src="assets/images/hero.jpg" alt="Chris and Charlotte">
     <div class="overlay">
       <article>
@@ -49,25 +50,28 @@
         <div><span data-days>0</span><small data-i18n="days"></small></div>
         <div><span data-hours>0</span><small data-i18n="hours"></small></div>
         <div><span data-minutes>0</span><small data-i18n="minutes"></small></div>
-        <div><span data-seconds>0</span><small data-i18n="seconds"></small></div>
+        <div>
+          <span data-seconds class="pulse">0</span>
+          <small data-i18n="seconds"></small>
+        </div>
       </div>
     </div>
   </section>
 
 
-  <section class="banner">
+  <section class="banner reveal">
     <div class="container">
       <div class="items">
         <article class="item">
-          <h1 data-i18n="where"></h1>
+          <div data-i18n="where"></div>
           <a class="font-light" target="_blank" href="https://maps.app.goo.gl/wrkXPvx5tV2o8oFa9">Chateau de Villeconin, France</a>
         </article>
         <article class="item">
-          <h1 data-i18n="when"></h1>
+          <div data-i18n="when"></div>
           <p data-i18n="when_content"></p>
         </article class="item">
         <article class="item">
-          <h1 data-i18n="dress"></h1>
+          <div data-i18n="dress"></div>
           <p data-i18n="dress_content"></p>
         </article>
       </div>
@@ -77,47 +81,52 @@
     </div>
   </section>
 
-  <section class="big-p">
+  <section class="big-p reveal">
     <p><span data-i18n="welcome_paragraph"></span><a href="mailto:chrisandcharlotte2026@gmail.com">email.</a></p>
   </section>
 
-  <section class="info-section">
-    <article class="col-2">
+  <section class="info-section ">
+    <article class="col-2 reveal">
       <div class="card">
         <img src="assets/images/inside.jpg" alt="Chateau de Villeconin interior">
         <div class="overlay" data-i18n="program_title"></div>
       </div>
       <div class="container info-text">
-        <div>
-          <h3>Mairie de Villeconin</h3>
-          <p><strong>30 Grande Rue, 91580 Villeconin</strong></p>
-          <p data-i18n="program_mairie"></p>
+        <div class="info-block">
+          <div class="title">Mairie de Villeconin</div>
+          <span class="address">30 Grande Rue, 91580 Villeconin</span>
+          <div class="text-lines">
+            <p data-i18n="program_mairie"></p>
+            <a data-i18n="walk" class="highlight" target="_blank" href="https://www.google.com/maps/dir/Ch%C3%A2teau+de+Villeconin,+Gr+Grande+Rue,+Villeconin/Mairie,+Mairie+de,+30+Gr+Grande+Rue,+91580+Villeconin/@48.513879,2.1232671,18z/data=!4m14!4m13!1m5!1m1!1s0x47e5cda387fe06ff:0xa1e36344ea7daeb4!2m2!1d2.1230382!2d48.5135547!1m5!1m1!1s0x47e5cbf5b43a767d:0x1d84aeca40c02b85!2m2!1d2.1265498!2d48.5134521!3e2?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"></a>
+          </div>
         </div>
-        <a data-i18n="walk" class="highlight" target="_blank" href="https://www.google.com/maps/dir/Ch%C3%A2teau+de+Villeconin,+Gr+Grande+Rue,+Villeconin/Mairie,+Mairie+de,+30+Gr+Grande+Rue,+91580+Villeconin/@48.513879,2.1232671,18z/data=!4m14!4m13!1m5!1m1!1s0x47e5cda387fe06ff:0xa1e36344ea7daeb4!2m2!1d2.1230382!2d48.5135547!1m5!1m1!1s0x47e5cbf5b43a767d:0x1d84aeca40c02b85!2m2!1d2.1265498!2d48.5134521!3e2?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"></a>
-        <div>
-          <h3>Château de Villeconin</h3>
-          <p><strong>6 Grand Rue, 91580 Villeconin</strong></p>
-          <p data-i18n="program_ceremony"></p>
-          <p data-i18n="program_cocktail"></p>
-          <p data-i18n="program_dinner"></p>
-          <p data-i18n="program_party"></p>
+
+        <div class="info-block">
+          <div class="title">Château de Villeconin</div>
+          <span class="address">6 Grand Rue, 91580 Villeconin</span>
+          <div class="text-lines">
+            <p data-i18n="program_ceremony"></p>
+            <p data-i18n="program_cocktail"></p>
+            <p data-i18n="program_dinner"></p>
+            <p data-i18n="program_party"></p>
+          </div>
         </div>
       </div>
     </article>
 
-    <article class="col-2">
+    <article class="col-2 reveal">
       <div class="card">
         <img src="assets/images/car.jpg" alt="Charlotte driving">
         <div class="overlay" data-i18n="transportation_title"></div>
       </div>
-      <div class="container info-text">
+      <div class="container info-text text-lines">
         <p data-i18n="transportation_line0"></p>
         <p data-i18n="transportation_line1"></p>
         <p data-i18n="transportation_line2"></p>
       </div>
     </article>
 
-    <article class="col-2">
+    <article class="col-2 reveal">
       <div class="card">
         <img src="assets/images/parking.jpg" alt="Parked car">
         <div class="overlay">Parking</div>
@@ -128,52 +137,56 @@
       </div>
     </article>
 
-    <article class="col-2">
+    <article class="col-2 reveal">
       <div class="card">
         <img src="assets/images/sleep.jpg" alt="cat asleep">
         <div class="overlay" data-i18n="sleep"></div>
       </div>
       <div class="container info-text">
         <div>
-          <h3 data-i18n="hotel"></h3>
-          <p data-i18n="lodging"></p>
-          <ul>
-            <li>
-              <a href="https://maps.app.goo.gl/iRjyELukPfuuFk8v9" target="_blank">
-                Logis Hôtel la Maison des Blés
-              </a>
-              <small>- 10 min <span data-i18n="car"></span></small>
-            </li>
-            <li>
-              <a href="https://maps.app.goo.gl/HnUBwuNoRMZqrEEh8" target="_blank">
-                Best Western – Dourdan
-              </a>
-              <small>- 15 min <span data-i18n="car"></span></small>
-            </li>
-            <li>
-              <a href="https://maps.app.goo.gl/R2PggToQo7YdWwi26" target="_blank">
-                Ibis – Étampes
-              </a>
-              <small>- 15 min <span data-i18n="car"></span></small>
-            </li>
-          </ul>
+          <div class="title" data-i18n="hotel"></div>
+          <div class="text-lines">
+            <p data-i18n="lodging"></p>
+            <ul>
+              <li>
+                <a href="https://maps.app.goo.gl/iRjyELukPfuuFk8v9" target="_blank">
+                  Logis Hôtel la Maison des Blés
+                </a>
+                <small>- 10 min <span data-i18n="car"></span></small>
+              </li>
+              <li>
+                <a href="https://maps.app.goo.gl/HnUBwuNoRMZqrEEh8" target="_blank">
+                  Best Western – Dourdan
+                </a>
+                <small>- 15 min <span data-i18n="car"></span></small>
+              </li>
+              <li>
+                <a href="https://maps.app.goo.gl/R2PggToQo7YdWwi26" target="_blank">
+                  Ibis – Étampes
+                </a>
+                <small>- 15 min <span data-i18n="car"></span></small>
+              </li>
+            </ul>
+          </div>
         </div>
         
         <div>
-          <h3>Camping</h3>
-          <p data-i18n="camping"></p>
+          <div class="title">Camping</div>
+          <p class="text-lines" data-i18n="camping"></p>
         </div>
         
         <div>
-          <h3 data-i18n="airbnb"></h3>
-          <p data-i18n="gites"></p>
-          <a href="https://www.airbnb.com/s/Villeconin--France/homes" target="_blank">Airbnbs</a>
-          <a href="https://www.gites-de-france.com/en/" target="_blank">Gîtes de France</a>
+          <div class="title" data-i18n="airbnb"></div>
+          <div class="text-lines">
+            <p data-i18n="gites"></p>
+            <a href="https://www.airbnb.com/s/Villeconin--France/homes" target="_blank">Airbnbs</a>
+            <a href="https://www.gites-de-france.com/en/" target="_blank">Gîtes de France</a>
+          </div>
         </div>
       </div>
     </article>
 
-    <article id="gift" class="col-2">
+    <article id="gift" class="reveal col-2">
       <div class="card">
         <img src="assets/images/gift.png" alt="Gift table">
         <div class="overlay" data-i18n="gift_title"></div>
@@ -184,7 +197,7 @@
       </div>
     </article>
 
-    <article class="col-2">
+    <article class="col-2 reveal">
       <div class="card">
         <img src="assets/images/kiss.jpg">
         <div class="overlay">FAQ</div>
@@ -192,23 +205,23 @@
       <div class="container">
         <article class="faq">
           <div>
-            <h3 data-i18n="faq_q1"></h3>
+            <div class="title" data-i18n="faq_q1"></div>
             <p data-i18n="faq_a1"></p>
           </div>
           <div>
-            <h3 data-i18n="faq_q2"></h3>
+            <div class="title" data-i18n="faq_q2"></div>
             <p data-i18n="faq_a2"></p>
           </div>
           <div>
-            <h3 data-i18n="faq_q3"></h3>
+            <div class="title" data-i18n="faq_q3"></div>
             <p data-i18n="faq_a3"></p>
           </div>
           <div>
-            <h3 data-i18n="faq_q4"></h3>
+            <div class="title" data-i18n="faq_q4"></div>
             <p data-i18n="faq_a4"></p>
           </div>
           <div>
-            <h3 data-i18n="faq_q5"></h3>
+            <div class="title" data-i18n="faq_q5"></div>
             <p data-i18n="faq_a5"></p>
           </div>
         </article>
@@ -216,7 +229,7 @@
     </article>
   </section>
 
-  <footer>
+  <footer class="reveal">
     <div class="col-2">
       <img src="assets/images/collage.jpg" alt="Collage of Chris and Charlotte">
       <div class="container">
@@ -229,6 +242,7 @@
 
 <script src="./assets/javascript/language.js" defer></script>
 <script src="./assets/javascript/countdown.js" defer></script>
+<script src="./assets/javascript/reveal.js" defer></script>
 
 </body>
 </html>

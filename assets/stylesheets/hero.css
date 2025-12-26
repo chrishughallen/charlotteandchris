@@ -25,23 +25,6 @@
       font-size: 3rem;
       padding: var(--sp-lg) 0 var(--sp-lg) var(--sp-lg);
     }
-
-    .countdown {
-      display: grid;
-      grid-template-columns: repeat(4, auto);
-      gap: var(--sp-sm);
-      font-family: var(--font-fun);
-      font-size: 1.5rem;
-
-      div {
-        display: grid;
-
-        small {
-          font-size: 0.75rem;
-          font-family: var(--font-sans-serif);
-        }
-      }
-    }
   }
 
   img {

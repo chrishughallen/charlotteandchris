@@ -14,7 +14,7 @@
 
     .items {
       display: grid;
-      gap: var(--sp-sm);
+      gap: var(--sp-md);
 
       @media (min-width: 768px) {
         grid-template-columns: repeat(3, 1fr);
@@ -24,10 +24,15 @@
       
       .item {
         border: 1px solid rgba(255, 255, 255, 30%);
-        padding: var(--sp-sm);
+        padding: var(--sp-md);
         border-radius: 8px;
         font-size: 1rem;
         text-align: center;
+
+        div {
+          font-family: var(--font-fun);
+          font-size: var(--fs-xl);
+        }
 
         a {
           color: var(--color-light);

@@ -5,6 +5,10 @@
   div {
     display: grid;
     gap: var(--sp-xs);
-    text-wrap-style: balance;
+
+    .title {
+      font-family: var(--font-fun);
+      font-size: var(--fs-md);
+    }
   }
 }

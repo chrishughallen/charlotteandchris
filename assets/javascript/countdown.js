@@ -1,5 +1,6 @@
 function startCountdown(el) {
   const target = new Date(el.dataset.date).getTime()
+  const secondsEl = el.querySelector('[data-seconds]')
 
   const update = () => {
     const now = Date.now()
@@ -19,7 +20,12 @@ function startCountdown(el) {
     el.querySelector('[data-days]').textContent = days
     el.querySelector('[data-hours]').textContent = hours
     el.querySelector('[data-minutes]').textContent = minutes
-    el.querySelector('[data-seconds]').textContent = seconds
+
+    // Pulse seconds only when they change
+    secondsEl.textContent = seconds
+    secondsEl.classList.remove('is-pulsing')
+    void secondsEl.offsetWidth // 👈 force reflow to restart animation
+    secondsEl.classList.add('is-pulsing')
   }
 
   update()
