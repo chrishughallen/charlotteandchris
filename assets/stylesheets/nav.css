@@ -36,6 +36,8 @@ nav {
       width: 25px;
       height: 25px;
       cursor: pointer;
+      display: block;
+      flex-shrink: 0;
 
       &:not(.selected) {
         opacity: 0.5;
