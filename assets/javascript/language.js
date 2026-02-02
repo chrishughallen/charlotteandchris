@@ -223,6 +223,16 @@ const faqs = {
       q: "Puis-je venir accompagné(e) ?",
       a: "En raison des contraintes de capacité du lieu, nous ne pourrons malheureusement pas accueillir d’invités supplémentaires. Merci beaucoup de votre compréhension, nous avons hâte de célébrer avec vous !"
     }
+  },
+  faq_6: {
+    en: {
+      q: "Is there a brunch planned?",
+      a: "No, we do not have a brunch or special event planned for Sunday. But if you decide to camp, don't worry, there will still be hot drinks and something to recharge your batteries on Sunday morning!"
+    },
+    fr: {
+      q: "Est-ce qu'un brunch est prévu ?",
+      a: "Non nous n'avons pas prévu de brunch ou d'événement particulier le dimanche. Mais si vous avez décidé de camper, pas d'inquiétude, il y aura quand même des boissons chaudes et de quoi reprendre des forces le dimanche matin !"
+    }
   }
 }
 
