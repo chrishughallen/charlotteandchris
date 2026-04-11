@@ -115,10 +115,6 @@ const translations = {
     en: "Unfortunately, the weekend of our wedding there is no public transportation available to come to the chateau. We recommend taking a taxi, or coorodinating with other guests to carpool. We will create a Whatsapp group to help coordinate transportation for those who need it.",
     fr: "Malheureusement, le week-end de notre mariage, il n'y a pas de transport en commun disponible pour venir au château. Nous recommandons de prendre un taxi, ou de coordonner avec d'autres invités pour faire du covoiturage. Nous créerons un groupe Whatsapp pour aider à coordonner le transport pour ceux qui en ont besoin."
   },
-  transportation_line2: {
-    en: "You can then take a taxi or uber from the train station, but be aware that quantity is limited as it is not in a busy area. You may want to reserve ahead of time.",
-    fr: "Vous pouvez ensuite prendre un taxi ou un Uber depuis la gare, mais sachez que la quantité est limitée car ce n'est pas une zone très fréquentée. Vous pouvez envisager de réserver à l'avance."
-  },
   parking1: {
     en: "If you plan to arrive with your own vehicle, there is parking available at the Chateau.",
     fr: "Si vous prévoyez d'arriver en voiture, un parking est à votre disposition au Château."
