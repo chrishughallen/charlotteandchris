@@ -63,6 +63,7 @@
   }
 
   .highlight {
+    margin-top: var(--sp-xs);
     color: var(--color-primary);
     font-weight: bold;
   }

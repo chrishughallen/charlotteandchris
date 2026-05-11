@@ -112,8 +112,8 @@ const translations = {
     fr: "Le lieu du mariage est situé à environ une heure de Paris en voiture."
   },
   transportation_line1: {
-    en: "Unfortunately, the weekend of our wedding there is no public transportation available to come to the chateau. We recommend taking a taxi, or coorodinating with other guests to carpool. We will create a Whatsapp group to help coordinate transportation for those who need it.",
-    fr: "Malheureusement, le week-end de notre mariage, il n'y a pas de transport en commun disponible pour venir au château. Nous recommandons de prendre un taxi, ou de coordonner avec d'autres invités pour faire du covoiturage. Nous créerons un groupe Whatsapp pour aider à coordonner le transport pour ceux qui en ont besoin."
+    en: "We recommend taking a taxi, or coorodinating with other guests to carpool. We will create a Whatsapp group to help coordinate transportation for those who need it.",
+    fr: "Nous recommandons de prendre un taxi, ou de coordonner avec d'autres invités pour faire du covoiturage. Nous créerons un groupe Whatsapp pour aider à coordonner le transport pour ceux qui en ont besoin."
   },
   parking1: {
     en: "If you plan to arrive with your own vehicle, there is parking available at the Chateau.",
