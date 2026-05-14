@@ -92,16 +92,16 @@ const translations = {
     fr: "16h30 : Cérémonie laïque"
   },
   program_cocktail: {
-    en: "5:30pm - Cocktail",
-    fr: "17h30 - Cocktail"
+    en: "6:00pm - Cocktail",
+    fr: "18h00 - Cocktail"
   },
   program_dinner: {
-    en: "8:00pm - Dinner",
-    fr: "20h00 - Dîner" 
+    en: "8:30pm - Dinner",
+    fr: "20h30 - Dîner" 
   },
   program_party: {
-    en: "10:30pm - Party",
-    fr: "22h30 - Fête"
+    en: "11:00pm - Party",
+    fr: "23h00 - Fête"
   },
   transportation_title: {
     en: "Transportation",
